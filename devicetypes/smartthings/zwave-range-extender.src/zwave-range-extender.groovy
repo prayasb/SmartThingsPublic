@@ -12,12 +12,13 @@
  *
  */
 metadata {
-	definition (name: "Z-Wave Range Extender", namespace: "smartthings", author: "SmartThings", ocfDeviceType: "oic.d.networking", hidden: true) {
+	definition (name: "Z-Wave Range Extender", namespace: "smartthings", author: "SmartThings", ocfDeviceType: "oic.d.networking") {
 		capability "Health Check"
 
 		fingerprint mfr: "0086", prod: "0104", model: "0075", deviceJoinName: "Aeotec Range Extender 6" //US
 		fingerprint mfr: "0086", prod: "0204", model: "0075", deviceJoinName: "Aeotec Range Extender 6" //UK
 		fingerprint mfr: "0086", prod: "0004", model: "0075", deviceJoinName: "Aeotec Range Extender 6" //EU
+		fingerprint mfr: "0246", prod: "0001", model: "0001", deviceJoinName: "Iris Z-Wave Range Extender (Smart Plug)"
 	}
 
 	tiles(scale: 2) {
